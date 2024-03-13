@@ -74,5 +74,8 @@ int main() {
 
     print_array(new_vector);
 
+    free(matrix);
+    free(new_vector);
+    
     return EXIT_SUCCESS;
 }
