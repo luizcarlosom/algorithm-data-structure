@@ -98,7 +98,7 @@ int main() {
 
     string = (char*) malloc(sizeof(char) * MAX);
 
-    vog_replace = (char*) malloc(sizeof(char) + 1);
+    vog_replace = (char*) malloc(sizeof(char));
 
     if (!string || !vog_replace) {
         printf("Erro na alocação de memória.");
