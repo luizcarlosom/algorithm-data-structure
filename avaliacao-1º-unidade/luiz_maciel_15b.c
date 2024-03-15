@@ -78,14 +78,16 @@ int replace_vog(char* string, char* vog_replace) {
                 *(string+m) = *(vog_replace);
         }
     }
+
+    free(vogs);
 }
 
 // Função para printar a string com as vogais trocadas
 void print_array(char* string) {
     for(int j = 0; j < MAX; j++) {
-        if (string[j] == 0) break;
+        if (*(string+j) == 0) break;
 
-        printf("%c", string[j]);
+        printf("%c", *(string+j));
     }
 }
 
@@ -116,6 +118,7 @@ int main() {
     print_array(string);
 
     free(string);
-
+    free(vog_replace);
+    
     return EXIT_SUCCESS;
 }
