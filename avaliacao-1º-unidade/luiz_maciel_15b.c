@@ -69,7 +69,8 @@ int replace_vog(char* string, char* vog_replace) {
     vogs[1] = 'e';
     vogs[2] = 'i';
     vogs[3] = 'o';
-
+    vogs[4] = 'u';
+    
     for(int m = 0; m < MAX; m++) {
         if (*(string+m) == 0) break;
 
@@ -103,6 +104,8 @@ int main() {
         printf("Erro na alocação de memória.");
         return EXIT_FAILURE;
     }
+
+    fill_vector(string);
 
     printf("Digite uma string: ");
     scanf("%s", string);
