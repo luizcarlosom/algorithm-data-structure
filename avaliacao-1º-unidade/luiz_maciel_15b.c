@@ -36,11 +36,11 @@ int cont_vog(char* string) {
         return EXIT_FAILURE;
     }
 
-    vogs[0] = 'a';
-    vogs[1] = 'e';
-    vogs[2] = 'i';
-    vogs[3] = 'o';
-    vogs[4] = 'u';
+    *(vogs) = 'a';
+    *(vogs+1) = 'e';
+    *(vogs+2) = 'i';
+    *(vogs+3) = 'o';
+    *(vogs+4) = 'u';
     
     for(int i = 0; i < MAX; i++) {
         if (*(string+i) == 0) break;
@@ -65,12 +65,12 @@ int replace_vog(char* string, char* vog_replace) {
         return EXIT_FAILURE;
     }
 
-    vogs[0] = 'a';
-    vogs[1] = 'e';
-    vogs[2] = 'i';
-    vogs[3] = 'o';
-    vogs[4] = 'u';
-    
+    *(vogs) = 'a';
+    *(vogs+1) = 'e';
+    *(vogs+2) = 'i';
+    *(vogs+3) = 'o';
+    *(vogs+4) = 'u';
+
     for(int m = 0; m < MAX; m++) {
         if (*(string+m) == 0) break;
 
