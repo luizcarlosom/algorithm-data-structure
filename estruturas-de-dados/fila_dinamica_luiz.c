@@ -66,4 +66,6 @@ void main() {
 
     dequeuing(&q1);
     print_queue(&q1);
+
+    return EXIT_SUCCESS;
 }
